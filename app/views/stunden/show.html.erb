@@ -1,0 +1,13 @@
+<h1>Stunde</h1>
+	<p>
+		Date: <%= @stunde.date %>
+	</p>
+	<p>
+		Mail: <%= @stunde.notes %>
+	</p>
+	<p>
+		User: <%= @stunde.user.name %>
+	</p>
+	<p>
+		<a href="<%= url_for :controller => 'stunden', :action => 'new' %>">New Stunde</a>
+	</p>
