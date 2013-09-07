@@ -1,0 +1,19 @@
+<h1>New User</h1>
+<%= form_for :user, url: users_path do |u| %>
+	<p>
+		<%= u.label :name %><br>
+		<%= u.text_field :name %>
+	</p>
+	<p>
+		<%= u.label :email %><br>
+		<%= u.text_field :email %>
+	</p>
+	<p>
+		<%= u.label :pass %><br>
+		<%= u.password_field :pass %>
+	</p>
+	<p>
+		<%= u.submit %>
+	</p>
+<% end %>
+	

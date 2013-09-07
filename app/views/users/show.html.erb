@@ -1,0 +1,10 @@
+<h1>User</h1>
+	<p>
+		Username: <%= @user.name %>
+	</p>
+	<p>
+		Mail: <%= @user.email %>
+	</p>
+	<p>
+		<a href="<%= url_for :controller => 'users', :action => 'new' %>">New User</a>
+	</p>
