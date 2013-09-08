@@ -1,0 +1,5 @@
+<h1>Hello World</h1>
+<% if logged_in? -%>
+Welcome, <%= current_user.name %><br>
+<%= link_to "Logout", :controller => "sessions", :action => "destroy" %>
+<% end -%>

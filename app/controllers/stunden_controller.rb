@@ -16,6 +16,6 @@ class StundenController < ApplicationController
 
 	private
 		def stunde_params
-			params.require(:stunde).permit(:date, :notes, :lesson_id)
+			params.require(:stunde).permit(:date, :notes, :lesson_id, :tutor, :duration, :endtime, :location)
 		end
 end

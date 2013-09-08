@@ -5,11 +5,24 @@
 		<%= u.datetime_select :date %>
 	</p>
 	<p>
+		<%= u.label :endtime %><br>
+		<%= u.datetime_select :endtime %>
+	</p>
+	<p>
 		<%= u.label :notes %><br>
 		<%= u.text_field :notes %>
 	</p>
 	<p>
-		TODO: Lesson ID
+		<%= u.label :tutor %><br>
+		<%= u.text_field :tutor %>
+	</p>
+	<p>
+		<%= u.label :location %><br>
+		<%= u.text_field :location %>
+	</p>
+	<p>
+		<%= u.label :duration %><br>
+		<%= u.text_field :duration %>
 	</p>
 	<p>
 		<%= u.submit %>

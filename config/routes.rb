@@ -1,6 +1,10 @@
 StudyHelp::Application.routes.draw do
   resources :users
   resources :stunden
+  # resources :sessions
+  get '/login/', to: 'sessions#new'
+  post '/login/', to: 'sessions#create'
+  get '/logout/', to: 'sessions#destroy'
   root to: 'welcome#index'
 
   # Timetable

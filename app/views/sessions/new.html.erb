@@ -1,0 +1,16 @@
+<h1>Log in</h1>
+<% if flash[:alert] %>
+  <p style="background-color: pink; border: 1px red solid;"><%= flash[:alert] %></p>
+<% end %>
+<%= form_tag login_path do %>
+  <div class="field">
+    <%= label_tag :name %><br>
+    <%= text_field_tag :name, params[:name] %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %><br>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Log in" %></div>
+<% end %>
+
